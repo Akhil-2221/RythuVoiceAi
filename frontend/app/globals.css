@@ -1,0 +1,5 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; }
+body { @apply bg-grain-50 text-soil-900 antialiased; }
+:focus-visible { outline: 3px solid #e0a824; outline-offset: 2px; }
+.field-bg { background-image: radial-gradient(circle at 20% 0%, #dcefd5 0, transparent 45%), radial-gradient(circle at 90% 30%, #fdf1d6 0, transparent 40%); }

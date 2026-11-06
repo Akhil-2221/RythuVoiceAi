@@ -1,0 +1,9 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart
+python-dotenv
+requests
+groq>=0.9
+numpy
+pypdf
+# gnani TTS SDK (provides `gnani.tts`): install the same package you used in your working setup, then pin it here

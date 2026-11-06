@@ -1,0 +1,14 @@
+# Render blueprint (backend). Secrets are set in the Render dashboard, never committed.
+services:
+  - type: web
+    name: rythuvoice-api
+    runtime: docker
+    rootDir: backend
+    healthCheckPath: /health
+    envVars:
+      - {key: APP_ENV, value: production}
+      - {key: CORS_ORIGINS, sync: false}
+      - {key: GROQ_API_KEY, sync: false}
+      - {key: GNANI_API_KEY, sync: false}
+      - {key: PRISMA_API_KEY, sync: false}
+      - {key: PRISMA_API_URL, sync: false}
